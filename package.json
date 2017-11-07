@@ -22,6 +22,7 @@
     "new": "hexo new",
     "generate": "hexo generate",
     "server": "hexo server",
+    "clean": "hexo clean",
     "deploy": "hexo deploy -g"
   }
 }
