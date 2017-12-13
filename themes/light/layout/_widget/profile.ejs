@@ -1,0 +1,38 @@
+<div class="widget profile">
+  <h3 class="title"><%= __('profile') %></h3>
+  <div class="entry">
+    <dl class="author">
+      <dt>Author</dt><dd><%= config.author %></dd>
+    </dl>
+    <ul class="social-list">
+      <% if (config.social.email) { %>
+        <li>
+          <a href="mailto:<%= config.social.email %>">
+            <i class="fas fa-envelope fa-2x"></i>
+          </a>
+        </li>
+      <% } %>
+      <% if (config.social.github) { %>
+        <li>
+          <a href="https://github.com/<%= config.social.github %>" target="_blank" rel="noopener noreferrer">
+            <i class="fab fa-github fa-2x"></i>
+          </a>
+        </li>
+      <% } %>
+      <% if (config.social.facebook) { %>
+        <li>
+          <a href="https://www.facebook.com/<%= config.social.facebook %>" target="_blank" rel="noopener noreferrer">
+            <i class="fab fa-facebook fa-2x"></i>
+          </a>
+        </li>
+      <% } %>
+      <% if (config.social.twitter) { %>
+        <li>
+          <a href="https://twitter.com/<%= config.social.twitter %>" target="_blank" rel="noopener noreferrer">
+            <i class="fab fa-twitter fa-2x"></i>
+          </a>
+        </li>
+      <% } %>
+    </ul>
+  </div>
+</div>

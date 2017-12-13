@@ -68,3 +68,19 @@
     a
       margin-right 10px
       display inline-block
+
+  .profile
+    .entry
+      .author
+        dt, dd
+          display: inline-block
+        dt
+          &::after
+            content: ':'
+            margin-right: 0.5em
+      .social-list
+        margin-top: 1em
+        li
+          display: inline-block
+        li + li
+          margin-left: 1em
