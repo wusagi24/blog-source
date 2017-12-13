@@ -1,6 +1,7 @@
 ---
 title: Github Pages を Hexo に置き換えてみた
 date: 2017-10-09 07:54:19
+category: etc
 tags:
 - Github Pages
 - Hexo

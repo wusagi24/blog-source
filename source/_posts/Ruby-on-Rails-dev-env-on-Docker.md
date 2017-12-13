@@ -1,6 +1,7 @@
 ---
 title: Docker による Ruby on Rails の開発環境
 date: 2017-11-08 01:30:55
+category: 環境構築
 tags:
 - Rails
 - Docker
