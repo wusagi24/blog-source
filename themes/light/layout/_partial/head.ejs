@@ -1,5 +1,5 @@
 <!DOCTYPE HTML>
-<html>
+<html lang="ja">
 <head>
   <meta charset="utf-8">
   <%
@@ -28,13 +28,10 @@
   <% if (page.keywords){ %><meta name="keywords" content="<%= page.keywords %>"><% } %>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-  <% if (page.title){ %><meta property="og:title" content="<%= page.title %>"/><% } %>
-  <meta property="og:site_name" content="<%= config.title %>"/>
-
-  <% if(page.cover) { %>
-    <meta property="og:image" content="<%= page.cover %>" />
+  <% if (page.image) { %>
+    <%- open_graph({twitter_id: 'wusagi24', image: page.image}) %>
   <% } else { %>
-    <meta property="og:image" content="<%= config.cover %>"/>
+    <%- open_graph({twitter_id: 'wusagi24'}) %>
   <% } %>
 
   <link href="<%- config.root %>favicon.png" rel="icon">
