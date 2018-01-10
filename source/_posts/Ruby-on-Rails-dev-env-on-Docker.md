@@ -5,6 +5,7 @@ category: 環境構築
 tags:
 - Rails
 - Docker
+- 開発環境
 comments: false 
 ---
 [ Github: [rails-dev-docker](https://github.com/wusagi24/rails-dev-docker) ]
